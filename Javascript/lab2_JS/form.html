@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form  Validion</title>
+	<script type="text/javascript" defer src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Form Validation</h1>
+	</header>					
+
+<div id="formDiv">
+	<form id="form">
+  <table>
+    <tr>
+      <td align="right">Name:</td>
+      <td align="left"><input type="text" name="name" id="name"></td><br>
+      <td align="left"><span id="nameError"></span></td>
+    </tr>
+    <tr>
+      <td align="right">Email: </td>
+      <td align="left"><input type="email" name="email" id="email"></td>
+      <td align="left"><span id="emailError"></span></td>
+    </tr>
+    <tr>
+      <td align="right">Phone No: </td>
+      <td align="left"><input type="text" name="phone" id="phone"></td>
+      <td align="left"><span id="phoneError"></span></td>
+    </tr>
+    <tr>
+      <td align="right">Password: </td>
+      <td align="left"><input type="password" name="password" id="pswd"></td>
+      <td align="left"><span id="passError"></span></td>
+    </tr>
+  </table></div>
+  <div id="buttonwrap">
+    <button type="submit" class="text-center btn btn-success">Submit</button>
+  </div>
+  
+</form>
+
+
+</body>
+</html>
