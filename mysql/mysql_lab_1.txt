@@ -1,0 +1,16 @@
+CREATE DATABASE lab_1;
+
+CREATE TABLE user_details(
+id Int PRIMARY KEY AUTO_INCREMENT,
+first_name varchar(25),
+last_name varchar(25),
+email varchar(50),
+username varchar(25),
+Password varchar(50));
+
+CREATE TABLE complaints(
+id Int PRIMARY KEY AUTO_INCREMENT,
+complaint_details varchar(500),
+picture varchar(25),
+user_id int, 
+FOREIGN KEY (user_id) REFERENCES user_details(id));

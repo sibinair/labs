@@ -1,0 +1,40 @@
+CREATE DATABASE lab_2;
+
+CREATE TABLE user_details(
+id Int PRIMARY KEY AUTO_INCREMENT,
+first_name varchar(25),
+last_name varchar(25),
+email varchar(50),
+username varchar(25),
+Password varchar(50));
+
+CREATE TABLE complaints(
+id Int PRIMARY KEY AUTO_INCREMENT,
+user_id int,
+complaint_details varchar(500),
+picture varchar(25),
+emp_id INT,
+complaint_progress ENUM('completed','in-progress','stuck') NOT NULL,
+agent_id int,
+complaint_status ENUM('closed','open'),
+FOREIGN KEY (emp_id) REFERENCES emp_details(id),
+FOREIGN KEY (user_id) REFERENCES user_details(id),
+FOREIGN KEY (agent_id) REFERENCES agent_details(id));
+
+CREATE TABLE emp_details(
+id Int PRIMARY KEY AUTO_INCREMENT,
+first_name varchar(25),
+last_name varchar(25),
+email varchar(50),
+username varchar(25),
+Password varchar(50));
+
+CREATE TABLE agent_details(
+id Int PRIMARY KEY AUTO_INCREMENT,
+first_name varchar(25),
+last_name varchar(25),
+email varchar(50),
+username varchar(25),
+Password varchar(50));
+
+

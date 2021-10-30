@@ -2,21 +2,15 @@ h1{
 	display: block;
 	text-align: center;
 }
-#formDiv
-{
+
+#formDiv{
     display: block;
-    text-align: left;
-    vertical-align: middle;
-    margin-left: 475px;
-    margin-right: auto;
+    margin-left: 35%;
 
 }
-form
-{
+#tableDiv{
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align:center;
+    border: 1px solid blue;
 }
 table tr td{
 padding-right: 5px;
